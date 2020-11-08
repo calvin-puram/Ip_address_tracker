@@ -1,0 +1,36 @@
+{
+  "name": "ip-address-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "lint": "eslint --ignore-path .gitignore \"**/*.+(ts|js|tsx)\"",
+    "format": "prettier --ignore-path .gitignore \"**/*.+(ts|js|tsx)\" --write",
+    "fun": "yarn type-check;yarn lint;yarn format;"
+  },
+  "dependencies": {
+    "@chakra-ui/core": "^1.0.0-rc.8",
+    "framer-motion": "^2.9.4",
+    "leaflet": "^1.7.1",
+    "next": "10.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-leaflet": "2.8.0",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.5.19",
+    "@types/node": "^14.14.6",
+    "@types/react": "^16.9.55",
+    "@types/react-leaflet": "^2.5.2",
+    "@types/validator": "^13.1.0",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-typescript-prettier": "^3.1.0",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  }
+}
