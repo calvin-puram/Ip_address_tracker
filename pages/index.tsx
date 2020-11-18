@@ -15,11 +15,8 @@ const AppHome: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Frontend Mentor | IP Address Tracker</title>
-        <meta
-          name="description"
-          content="Frontend Mentor Challenge | IP Address Tracker - By Vishnumohan R K"
-        />
+        <title> IP Address Tracker</title>
+        <meta name="description" content="IP Address Tracker" />
       </Head>
 
       <main>
