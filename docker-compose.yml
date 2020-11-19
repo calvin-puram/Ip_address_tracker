@@ -3,7 +3,9 @@ version: '3.7'
 services: 
   web:
     container_name: 'nextweb'
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
     volumes: 
       - '.:/app'
       - '/app/node_modules'

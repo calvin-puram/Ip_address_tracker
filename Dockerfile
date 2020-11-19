@@ -1,13 +1,14 @@
-FROM node:alpine
+FROM node:alpine as builder
 
 WORKDIR /app
 
 ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package*.json ./
-RUN npm install --silent
-
-
+RUN npm ci --silent
 COPY . .
+RUN npm run build
 
-CMD ["npm", "run", "dev"]
+
+EXPOSE 3000
+CMD [ "npm", "start" ]

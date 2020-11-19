@@ -30,7 +30,7 @@ const Header: React.FC<HeaderCompProps> = ({ form, card }) => (
         color="white"
         textAlign="center"
       >
-        IP Address Tracker
+        IP Address Tracker 
       </Text>
     </header>
     {form}
